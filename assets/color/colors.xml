@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- primary color -->
+    <color name="primary">#1A80E5</color>
+    
+    <!-- white colors -->
+    <color name="white">#FFFFFF</color>
+
+    <color name="white2">#F7FAFC</color>
+
+    <!-- black colors -->
+    <color name="black">#0D141C</color>
+
+    <!-- blue colors -->
+    <color name="blue">#4F7396</color>
+
+    <!-- gray colors -->
+    <color name="gray">#E8EDF2</color>
+    <color name="gray2">#D1D9E6</color>
+    <color name="gray3">#D1DBE8</color>
+
+    <!-- transparent invisible -->
+    <color name="transparent">#00000000</color>
+    
+</resources>
