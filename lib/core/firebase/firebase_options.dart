@@ -50,21 +50,19 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyByV8k3L4VDHBFjRs4h9lgv0E8yzHXE9Y4',
-    appId: '1:303599992035:android:c6f03d1e72554f3f9dd9d6',
-    messagingSenderId: '303599992035',
-    projectId: 'altipal-meca-dev',
-    storageBucket: 'altipal-meca-dev.appspot.com',
+    apiKey: 'AIzaSyCztsZqcQ-4XZGPUGO2x5yXRqsThPEyvPU',
+    appId: '1:333424043656:android:9217c61f3e147ac7ef213d',
+    messagingSenderId: '333424043656',
+    projectId: 'tasks-64ad8',
+    storageBucket: 'tasks-64ad8.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCrC3-MO4X_DESTpsDlEcHhNlbFq3H5SC8',
-    appId: '1:303599992035:ios:2ec49410a0625e329dd9d6',
-    messagingSenderId: '303599992035',
-    projectId: 'altipal-meca-dev',
-    storageBucket: 'altipal-meca-dev.appspot.com',
-    androidClientId: '303599992035-28q76lo6ig7oh1ii3gp935ucisj6653p.apps.googleusercontent.com',
-    iosClientId: '303599992035-f3bd3gqmg54uof74j3e3lbfv7ghpr4ka.apps.googleusercontent.com',
-    iosBundleId: 'co.com.altipal.meca.dev',
+    apiKey: 'AIzaSyDGCfYAa-cZcpw1AbXZVKyNPx_wdtzZfCA',
+    appId: '1:333424043656:ios:cef97e067064644fef213d',
+    messagingSenderId: '333424043656',
+    projectId: 'tasks-64ad8',
+    storageBucket: 'tasks-64ad8.firebasestorage.app',
+    iosBundleId: 'com.example.task',
   );
 }
