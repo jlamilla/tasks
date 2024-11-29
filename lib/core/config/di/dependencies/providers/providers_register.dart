@@ -1,3 +1,4 @@
+import 'package:task/app/presentation/screens/tasks/tasks_provider.dart';
 import 'package:task/core/config/di/dependencies/providers/provider_imports.dart';
 
 List<SingleChildWidget> providers = <SingleChildWidget>[
@@ -10,7 +11,12 @@ List<SingleChildWidget> _providersSplash = <SingleChildWidget>[
 ];
 
 List<SingleChildWidget> _providersUseCase = <SingleChildWidget>[
-  // ChangeNotifierProvider<BooksNewProvider>(create: (_) => BooksNewProvider(getBooksNewUseCase: sl()), lazy: false,),
-  // ChangeNotifierProvider<SearchBooksProvider>(create: (_) => SearchBooksProvider(getSearchBooksUseCase: sl()), lazy: false,),
-  // ChangeNotifierProvider<BooksDetailsProvider> (create: (_) => BooksDetailsProvider(getBookDetailsUseCase: sl()), lazy: false,),
+  ChangeNotifierProvider<TasksProvider>(
+    create: (_) => TasksProvider(
+      getTasksUseCase: sl(),
+      saveTaskByIdUseCase: sl(),
+      deleteTaskByIdUseCase: sl(),
+    ), 
+    lazy: false,
+  ),
 ];

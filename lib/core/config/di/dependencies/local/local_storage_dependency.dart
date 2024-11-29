@@ -1,4 +1,5 @@
 import 'package:hive_flutter/adapters.dart';
+import 'package:task/app/data/models/task/task.dart';
 
 class LocalStorageDependency {
   static Future<void> init() async {
@@ -6,12 +7,11 @@ class LocalStorageDependency {
     _registerAdapters();
   }
 
-  ///Se registran todos los adapters creados en hive
   static void _registerAdapters() {
-    _actionPlan();
+    _task();
   }
 
-  static void _actionPlan() {
-    //Hive.registerAdapter(ActionPlanResponseLocalAdapter());
+  static void _task() {
+    Hive.registerAdapter(TaskAdapter());
   }
 }

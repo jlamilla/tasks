@@ -15,9 +15,9 @@ import 'package:vector_graphics/vector_graphics.dart' as _vg;
 class $AssetsAppIconGen {
   const $AssetsAppIconGen();
 
-  /// File path: assets/app_icon/android.jpg
+  /// File path: assets/app_icon/android.png
   AssetGenImage get android =>
-      const AssetGenImage('assets/app_icon/android.jpg');
+      const AssetGenImage('assets/app_icon/android.png');
 
   /// List of all assets
   List<AssetGenImage> get values => [android];

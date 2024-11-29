@@ -44,5 +44,5 @@ app.*.map.json
 
 
 # Sig
-altipal-key-store.jks
+tasks-key-store.jks
 key.properties
