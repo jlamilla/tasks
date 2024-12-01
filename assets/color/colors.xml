@@ -5,14 +5,15 @@
     
     <!-- white colors -->
     <color name="white">#FFFFFF</color>
-
     <color name="white2">#F7FAFC</color>
+    <color name="white3">#E3E8ED</color>
 
     <!-- black colors -->
     <color name="black">#0D141C</color>
 
     <!-- blue colors -->
     <color name="blue">#4F7396</color>
+    <color name="blue2">#5C7087</color>
 
     <!-- gray colors -->
     <color name="gray">#E8EDF2</color>
