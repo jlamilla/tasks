@@ -9,9 +9,8 @@ class Task extends Equatable {
   const Task({
     required this.id,
     required this.title,
-    required this.description,
     required this.finalized,
-    required this.taskDate,
+    this.taskDate,
     required this.createDate,
     required this.updateDate,
   });
@@ -21,21 +20,18 @@ class Task extends Equatable {
   @HiveField(1)
   final String title;
   @HiveField(2)
-  final String description;
-  @HiveField(3)
   final bool finalized;
+  @HiveField(3)
+  final DateTime? taskDate;
   @HiveField(4)
-  final DateTime taskDate;
-  @HiveField(5)
   final DateTime createDate;
-  @HiveField(6)
+  @HiveField(5)
   final DateTime updateDate;
 
   static Task fromJson(Map<String, dynamic> json) =>
   Task(
     id: json['id'],
     title: json['title'],
-    description: json['description'],
     finalized: json['finalized'],
     taskDate: json['taskDate'],
     createDate: json['createDate'],
@@ -45,18 +41,33 @@ class Task extends Equatable {
   Map<String, dynamic> toJson() => <String, dynamic>{
     'id': id,
     'title': title,
-    'description': description,
     'finalized': finalized,
     'taskDate': taskDate,
     'createDate': createDate,
     'updateDate': updateDate,
   };
 
+  Task copyWith({
+    String? id,
+    String? title,
+    bool? finalized,
+    DateTime? taskDate,
+    DateTime? createDate,
+    DateTime? updateDate,
+  }) =>
+  Task(
+    id: id ?? this.id,
+    title: title ?? this.title,
+    finalized: finalized ?? this.finalized,
+    taskDate: taskDate ?? this.taskDate,
+    createDate: createDate ?? this.createDate,
+    updateDate: updateDate ?? this.updateDate,
+  );
+
   @override
   List<Object?> get props => <Object?>[
     id,
     title,
-    description,
     finalized,
     taskDate,
     createDate,

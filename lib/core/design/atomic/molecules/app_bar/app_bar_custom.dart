@@ -21,6 +21,31 @@ class AppBarCustom extends StatelessWidget {
       width: context.layout.width,
       child: Stack(
         children: <Widget>[
+          Padding(
+            padding: EdgeInsets.only(
+              left: context.layout.value<double>(
+                xs: context.layout.width * 0.002,
+                sm: context.layout.width * 0.003,
+                md: context.layout.width * 0.004,
+                lg: context.layout.width * 0.005,
+              ),
+            ),
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: InkWell(
+                highlightColor: Colors.transparent,
+                hoverColor: Colors.transparent,
+                splashColor: Colors.transparent,
+                onTap: (){
+                  LoggerService.log('Tap menu');
+                },
+                child: Container(
+                  padding: EdgeInsets.all(context.layout.width * 0.01),
+                  child: AssetsToken.icons.menu.svg(),
+                ),
+              ),
+            ),
+          ),
           Center(
             child: Text(
               title,

@@ -21,49 +21,41 @@ class TapButton extends StatelessWidget {
     final double screenWidth = MediaQuery.of(context).size.width;
     final double screenHeight = MediaQuery.of(context).size.height;
 
-    return Padding(
-      padding: EdgeInsets.only(
-        left: context.layout.value<double>(
-          xs: screenWidth * 0.027,
-          sm: screenWidth * 0.029,
-          md: screenWidth * 0.032,
-          lg: screenWidth * 0.033,
-        ),
-      ),
-      child: Material(
-        color: isSelect ? ColorFoundation.background.secondaryButtonSelect : ColorFoundation.background.secondaryButton,
-        borderRadius: BorderRadius.circular(12),
-        child: InkWell(
-          borderRadius: BorderRadius.circular(12),
-          highlightColor: ColorFoundation.background.secondaryButtonSelect,
-          splashColor: ColorFoundation.background.secondaryButtonSelect,
-          onTap: onTap,
-          child: Container(
-            padding: EdgeInsets.symmetric(
-              horizontal: context.layout.value<double>(
-                xs: screenWidth * 0.03,
-                sm: screenWidth * 0.03,
-                md: screenWidth * 0.04,
-                lg: screenWidth * 0.04,
-              ),
-              vertical: context.layout.value<double>(
-                xs: screenHeight * 0.02,
-                sm: screenHeight * 0.02,
-                md: screenHeight * 0.01,
-                lg: screenHeight * 0.01,
-              ),
+    return Material(
+      color: isSelect ? ColorFoundation.background.white2 : ColorFoundation.background.white3,
+      elevation: isSelect ? 0.4 : 0,
+      borderRadius: BorderRadius.circular(20),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(20),
+        highlightColor: ColorFoundation.background.white3,
+        splashColor: ColorFoundation.background.white3,
+        onTap: onTap,
+        child: Container(
+          padding: EdgeInsets.symmetric(
+            horizontal: context.layout.value<double>(
+              xs: screenWidth * 0.03,
+              sm: screenWidth * 0.03,
+              md: screenWidth * 0.04,
+              lg: screenWidth * 0.04,
             ),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(12)
+            vertical: context.layout.value<double>(
+              xs: screenHeight * 0.02,
+              sm: screenHeight * 0.02,
+              md: screenHeight * 0.01,
+              lg: screenHeight * 0.01,
             ),
-            child: Text(
-              title,
-              style: context.layout.value<TextStyle>(
-                xs: FontFoundation.paragraph.medium14Black,
-                sm: FontFoundation.paragraph.medium14Black,
-                md: FontFoundation.title.medium16Black,
-                lg: FontFoundation.title.medium16Black,
-              ),
+          ),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(12)
+          ),
+          child: Text(
+            title,
+            textAlign: TextAlign.center,
+            style: context.layout.value<TextStyle>(
+              xs: FontFoundation.paragraph.medium14Black,
+              sm: FontFoundation.paragraph.medium14Black,
+              md: FontFoundation.title.medium16Black,
+              lg: FontFoundation.title.medium16Black,
             ),
           ),
         ),
