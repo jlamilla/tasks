@@ -15,12 +15,12 @@ import 'package:vector_graphics/vector_graphics.dart' as _vg;
 class $AssetsAppIconGen {
   const $AssetsAppIconGen();
 
-  /// File path: assets/app_icon/android.png
-  AssetGenImage get android =>
-      const AssetGenImage('assets/app_icon/android.png');
+  /// File path: assets/app_icon/tasks_android.png
+  AssetGenImage get tasksAndroid =>
+      const AssetGenImage('assets/app_icon/tasks_android.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [android];
+  List<AssetGenImage> get values => [tasksAndroid];
 }
 
 class $AssetsColorGen {
@@ -42,11 +42,17 @@ class $AssetsIconsGen {
   /// File path: assets/icons/check.svg
   SvgGenImage get check => const SvgGenImage('assets/icons/check.svg');
 
+  /// File path: assets/icons/menu.svg
+  SvgGenImage get menu => const SvgGenImage('assets/icons/menu.svg');
+
   /// File path: assets/icons/settings.svg
   SvgGenImage get settings => const SvgGenImage('assets/icons/settings.svg');
 
+  /// File path: assets/icons/trash.svg
+  SvgGenImage get trash => const SvgGenImage('assets/icons/trash.svg');
+
   /// List of all assets
-  List<SvgGenImage> get values => [add, check, settings];
+  List<SvgGenImage> get values => [add, check, menu, settings, trash];
 }
 
 class $AssetsImagesGen {

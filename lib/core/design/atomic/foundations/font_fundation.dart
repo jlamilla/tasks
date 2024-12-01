@@ -31,16 +31,16 @@ class _Title {
   final TextStyle regular20Black = TextTokens.manrope.regular_20.copyWith(color: ColorFoundation.text.black);
   
   // Size 16 blue
-  final TextStyle bold16Blue = TextTokens.manrope.bold_16.copyWith(color: ColorFoundation.text.blue);
-  final TextStyle semiBold16Blue = TextTokens.manrope.semibold_16.copyWith(color: ColorFoundation.text.blue);
-  final TextStyle medium16Blue = TextTokens.manrope.medium_16.copyWith(color: ColorFoundation.text.blue);
-  final TextStyle regular16Blue = TextTokens.manrope.regular_16.copyWith(color: ColorFoundation.text.blue);
+  final TextStyle bold16Blue2 = TextTokens.manrope.bold_16.copyWith(color: ColorFoundation.text.blue2);
+  final TextStyle semiBold16Blue2 = TextTokens.manrope.semibold_16.copyWith(color: ColorFoundation.text.blue2);
+  final TextStyle medium16Blue2 = TextTokens.manrope.medium_16.copyWith(color: ColorFoundation.text.blue2);
+  final TextStyle regular16Blue2 = TextTokens.manrope.regular_16.copyWith(color: ColorFoundation.text.blue2);
 
   // Size 18 blue
-  final TextStyle bold18Blue = TextTokens.manrope.bold_18.copyWith(color: ColorFoundation.text.blue);
-  final TextStyle semiBold18Blue = TextTokens.manrope.semibold_18.copyWith(color: ColorFoundation.text.blue);
-  final TextStyle medium18Blue = TextTokens.manrope.medium_18.copyWith(color: ColorFoundation.text.blue);
-  final TextStyle regular18Blue = TextTokens.manrope.regular_18.copyWith(color: ColorFoundation.text.blue);
+  final TextStyle bold18Blue2 = TextTokens.manrope.bold_18.copyWith(color: ColorFoundation.text.blue2);
+  final TextStyle semiBold18Blue2 = TextTokens.manrope.semibold_18.copyWith(color: ColorFoundation.text.blue2);
+  final TextStyle medium18Blue2 = TextTokens.manrope.medium_18.copyWith(color: ColorFoundation.text.blue2);
+  final TextStyle regular18Blue2 = TextTokens.manrope.regular_18.copyWith(color: ColorFoundation.text.blue2);
 }
 
 class _Paragraph {
@@ -59,14 +59,14 @@ class _Paragraph {
   final TextStyle regular14Black = TextTokens.manrope.regular_14.copyWith(color: ColorFoundation.text.black);
 
   // Size 12 blue
-  final TextStyle bold12Blue = TextTokens.manrope.bold_12.copyWith(color: ColorFoundation.text.blue);
-  final TextStyle semiBold12Blue = TextTokens.manrope.semibold_12.copyWith(color: ColorFoundation.text.blue);
-  final TextStyle medium12Blue = TextTokens.manrope.medium_12.copyWith(color: ColorFoundation.text.blue);
-  final TextStyle regular12Blue = TextTokens.manrope.regular_12.copyWith(color: ColorFoundation.text.blue);
+  final TextStyle bold12Blue2 = TextTokens.manrope.bold_12.copyWith(color: ColorFoundation.text.blue2);
+  final TextStyle semiBold12Blue2 = TextTokens.manrope.semibold_12.copyWith(color: ColorFoundation.text.blue2);
+  final TextStyle medium12Blue2 = TextTokens.manrope.medium_12.copyWith(color: ColorFoundation.text.blue2);
+  final TextStyle regular12Blue2 = TextTokens.manrope.regular_12.copyWith(color: ColorFoundation.text.blue2);
 
   // Size 14 blue
-  final TextStyle bold14Blue = TextTokens.manrope.bold_14.copyWith(color: ColorFoundation.text.blue);
-  final TextStyle semiBold14Blue = TextTokens.manrope.semibold_14.copyWith(color: ColorFoundation.text.blue);
-  final TextStyle medium14Blue = TextTokens.manrope.medium_14.copyWith(color: ColorFoundation.text.blue);
-  final TextStyle regular14Blue = TextTokens.manrope.regular_14.copyWith(color: ColorFoundation.text.blue);
+  final TextStyle bold14Blue2 = TextTokens.manrope.bold_14.copyWith(color: ColorFoundation.text.blue2);
+  final TextStyle semiBold14Blue2 = TextTokens.manrope.semibold_14.copyWith(color: ColorFoundation.text.blue2);
+  final TextStyle medium14Blue2 = TextTokens.manrope.medium_14.copyWith(color: ColorFoundation.text.blue2);
+  final TextStyle regular14Blue2 = TextTokens.manrope.regular_14.copyWith(color: ColorFoundation.text.blue2);
 }

@@ -19,6 +19,9 @@ class ColorsToken {
   /// Color: #4F7396
   static const Color blue = Color(0xFF4F7396);
 
+  /// Color: #5C7087
+  static const Color blue2 = Color(0xFF5C7087);
+
   /// Color: #E8EDF2
   static const Color gray = Color(0xFFE8EDF2);
 
@@ -39,4 +42,7 @@ class ColorsToken {
 
   /// Color: #F7FAFC
   static const Color white2 = Color(0xFFF7FAFC);
+
+  /// Color: #E3E8ED
+  static const Color white3 = Color(0xFFE3E8ED);
 }

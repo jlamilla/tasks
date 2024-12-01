@@ -25,14 +25,16 @@ class _Text {
   final Color black = ColorsToken.black;
   final Color white = ColorsToken.white;
   final Color blue = ColorsToken.blue;
+  final Color blue2 = ColorsToken.blue2;
   final Color gray = ColorsToken.gray;
 }
 
 class _Background {
   _Background._();
   final Color black = ColorsToken.black;
-  final Color white2 = ColorsToken.white2;
   final Color white = ColorsToken.white;
+  final Color white2 = ColorsToken.white2;
+  final Color white3 = ColorsToken.white3;
   final Color blue = ColorsToken.blue;
   final Color transparent = ColorsToken.transparent;
   final Color gray = ColorsToken.gray;
