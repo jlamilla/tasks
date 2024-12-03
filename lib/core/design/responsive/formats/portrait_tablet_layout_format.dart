@@ -8,11 +8,11 @@ class PortraitTabletLayoutFormat extends LayoutFormat {
 
   @override
   Map<LayoutBreakpoint, double> get breakpoints => <LayoutBreakpoint, double>{
-        LayoutBreakpoint.xs: 720, // HD
-        LayoutBreakpoint.sm: 1080, // FHD
-        LayoutBreakpoint.md: 1125, // iPhone 11 Pro
-        LayoutBreakpoint.lg: 1440, // QHD
-        LayoutBreakpoint.xl: 2160, //  4K
+        LayoutBreakpoint.xs: 720,
+        LayoutBreakpoint.sm: 1080,
+        LayoutBreakpoint.md: 1125,
+        LayoutBreakpoint.lg: 1440,
+        LayoutBreakpoint.xl: 2160,
       };
 
   @override

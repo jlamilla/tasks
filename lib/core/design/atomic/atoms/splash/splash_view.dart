@@ -1,4 +1,3 @@
-import 'package:circular_gradient_spinner/circular_gradient_spinner.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:task/core/design/atomic/atoms/splash/splash_provider.dart';
@@ -50,15 +49,8 @@ class SplashView extends StatelessWidget {
                   lg: screenWidth * 0.01,
                 ),
               ),
-              Transform(
-                alignment: Alignment.center,
-                transform: Matrix4.rotationY(3.14159),
-                child: CircularGradientSpinner(
-                  color: ColorFoundation.background.blue,
-                  size: 40,
-                  strokeWidth: 4,
-                  spinnerDirection: SpinnerDirection.antiClockwise,
-                ),
+              CircularProgressIndicator(
+                color: ColorFoundation.background.blue,
               ),
               Consumer<SplashProvider>(
                 builder: (BuildContext context, SplashProvider splashProvider, Widget? child) {

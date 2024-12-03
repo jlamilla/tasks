@@ -11,7 +11,6 @@ class DependencyInjection {
   static Future<void> init() async {
     await ExternalDependency.init();
     await LocalStorageDependency.init();
-    // Local
     DataSourceLocalDependency.init();
     RepositoryLocalDependency.init();
     UseCaseLocalDependency.init();
