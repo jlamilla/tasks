@@ -22,11 +22,11 @@ class PortraitPhysicalPixelLayoutFormat extends LayoutFormat {
 
   @override
   Map<LayoutBreakpoint, double> get breakpoints => <LayoutBreakpoint, double>{
-    LayoutBreakpoint.xs: 480, // FWVGA
-    LayoutBreakpoint.sm: 720, // HD
-    LayoutBreakpoint.md: 1080, // FHD
-    LayoutBreakpoint.lg: 1440, //
-    LayoutBreakpoint.xl: 1768, // QHD
+    LayoutBreakpoint.xs: 480, 
+    LayoutBreakpoint.sm: 720, 
+    LayoutBreakpoint.md: 1080,
+    LayoutBreakpoint.lg: 1440,
+    LayoutBreakpoint.xl: 1768,
   };
 
   @override

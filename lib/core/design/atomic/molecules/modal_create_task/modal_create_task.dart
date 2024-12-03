@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:task/app/data/models/task/task.dart';
 import 'package:task/core/design/atomic/foundations/color_fundation.dart';
+import 'package:task/core/design/atomic/foundations/font_fundation.dart';
 import 'package:task/core/design/atomic/molecules/modal_create_task/modal_create_task_provider.dart';
 import 'package:task/core/design/responsive/layout.dart';
 import 'package:task/core/design/utils/format_date.dart';
@@ -52,7 +53,7 @@ class _ModalCreateTaskState extends State<ModalCreateTask> {
             children: <Widget>[
               Expanded(
                 child: TextField(
-                  focusNode: _focusNode, // Asigna el FocusNode al TextField
+                  focusNode: _focusNode,
                   onChanged: modalCreateTaskProvider.onChangedTitle,
                   decoration: const InputDecoration(
                     labelText: 'Add a task title',
@@ -62,10 +63,15 @@ class _ModalCreateTaskState extends State<ModalCreateTask> {
               ),
               SizedBox(width: context.layout.width * 0.01),
               ElevatedButton(
-                onPressed: () {
+                onPressed: modalCreateTaskProvider.titleTask.isEmpty ? null :  () {
                   widget.onSave(modalCreateTaskProvider.onSaveTasks(context));
                 },
-                child: const Text('Save'),
+                child: Text(
+                  'Save',
+                  style: modalCreateTaskProvider.titleTask.isEmpty 
+                    ? FontFoundation.paragraph.medium14Blue2 
+                    : FontFoundation.paragraph.medium14Black,
+                ),
               ),
             ],
           ),

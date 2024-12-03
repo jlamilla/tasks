@@ -7,14 +7,14 @@ import 'package:task/core/design/atomic/atoms/splash/splash_view.dart';
 abstract class Pages {
   static final GoRouter appRouter = GoRouter(initialLocation: '/', routes: <RouteBase>[
     GoRoute(
-      name: 'splash',
+      name: Routes.splash,
       path: Routes.splash,
       builder: (BuildContext context, GoRouterState state) {
         return const SplashView();
       },
     ),
     GoRoute(
-      name: 'tasks',
+      name: Routes.tasks,
       path: Routes.tasks,
       builder: (BuildContext context, GoRouterState state) {
         return const TasksScreen();

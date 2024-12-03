@@ -15,7 +15,7 @@ class TemplateBaseWithAppBar extends StatelessWidget {
   final String titleAppbar;
   final Widget body;
   final EdgeInsetsGeometry? paddingBody;
-  final void Function() onPressedFloatingActionButton;
+  final VoidCallback onPressedFloatingActionButton;
 
   @override
   Widget build(BuildContext context) {

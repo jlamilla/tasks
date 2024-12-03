@@ -12,7 +12,7 @@ class TapButton extends StatelessWidget {
   });
 
   final String title;
-  final void Function()? onTap;
+  final VoidCallback? onTap;
   final bool isSelect;
 
   @override

@@ -19,7 +19,7 @@ class AnimatedCheckbox extends StatefulWidget {
   final String subTitle;
   final bool initialValue;
   final ValueChanged<bool> onChanged;
-  final void Function() onDeleted;
+  final VoidCallback onDeleted;
 
   @override
   _AnimatedCheckboxState createState() => _AnimatedCheckboxState();
@@ -125,37 +125,49 @@ class _AnimatedCheckboxState extends State<AnimatedCheckbox> with SingleTickerPr
                       lg: context.layout.width * 0.02,
                     ),
                   ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      AnimatedDefaultTextStyle(
-                        duration: const Duration(milliseconds: 300),
-                        style: context.layout.value(
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        AnimatedDefaultTextStyle(
+                          duration: const Duration(milliseconds: 300),
+                          style: context.layout.value(
                             xs: FontFoundation.title.medium16Black,
                             sm: FontFoundation.title.medium16Black,
                             md: FontFoundation.title.medium18Black,
                             lg: FontFoundation.title.medium18Black,
                           ).copyWith(
-                          color: _isChecked ? ColorFoundation.background.black.withOpacity(0.5) : null,
-                          decoration: _isChecked ? TextDecoration.lineThrough : null,
+                            color: _isChecked ? ColorFoundation.background.black.withOpacity(0.5) : null,
+                            decoration: _isChecked ? TextDecoration.lineThrough : null,
+                          ),
+                          child: Text(
+                            widget.title,
+                            softWrap: true,
+                            overflow: TextOverflow.ellipsis,
+                            maxLines: 4,
+                          ),
                         ),
-                        child: Text(widget.title),
-                      ),
-                      AnimatedDefaultTextStyle(
-                        duration: const Duration(milliseconds: 300),
-                        style: context.layout.value(
+                        AnimatedDefaultTextStyle(
+                          duration: const Duration(milliseconds: 300),
+                          style: context.layout.value(
                             xs: FontFoundation.paragraph.medium14Blue2,
                             sm: FontFoundation.paragraph.medium14Blue2,
                             md: FontFoundation.title.medium16Blue2,
                             lg: FontFoundation.title.medium16Blue2,
                           ).copyWith(
-                          color: _isChecked ? ColorFoundation.background.blue.withOpacity(0.5) : null,
-                          decoration: _isChecked ? TextDecoration.lineThrough : null,
+                            color: _isChecked ? ColorFoundation.background.blue.withOpacity(0.5) : null,
+                            decoration: _isChecked ? TextDecoration.lineThrough : null,
+                          ),
+                          child: Text(
+                            widget.subTitle,
+                            softWrap: true,
+                            overflow: TextOverflow.ellipsis,
+                            maxLines: 2,
+                          ),
                         ),
-                        child: Text(widget.subTitle),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ],
               ),

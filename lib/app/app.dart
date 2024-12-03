@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:task/core/config/di/dependencies/providers/providers_register.dart';
+import 'package:task/core/config/internationalization/localizations_delegates.dart';
+import 'package:task/core/config/internationalization/supported_locales.dart';
 import 'package:task/core/config/routes/pages.dart';
 import 'package:task/core/design/layout_all_imports.dart';
 import 'package:task/core/design/theme/theme.dart';
@@ -12,7 +13,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-      providers: providers,
+      providers: ProviderLit().listProvider,
       child: Layout(
         format: context.responsiveValue<LayoutFormat>(
           mobile: PortraitPhysicalPixelLayoutFormat(),
@@ -20,15 +21,9 @@ class App extends StatelessWidget {
         ),
         child: MaterialApp.router(
           theme: AppTheme.getTheme(),
-          supportedLocales: const <Locale>[
-            Locale('en', 'US'),
-          ],
-          localizationsDelegates: const <LocalizationsDelegate<void>>[
-            GlobalMaterialLocalizations.delegate,
-            GlobalWidgetsLocalizations.delegate,
-            GlobalCupertinoLocalizations.delegate,
-          ],
-          locale: const Locale('en', 'US'),
+          supportedLocales: SupportedLocales.locales,
+          localizationsDelegates: LocalizationsDelegates.locations,
+          locale: SupportedLocales.locale,
           routerConfig: Pages.appRouter,  
           debugShowCheckedModeBanner: false,
         ),

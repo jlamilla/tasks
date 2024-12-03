@@ -31,7 +31,7 @@ class BoostrapLayoutFormat extends LayoutFormat {
 
   @override
   LayoutValue<double> get maxWidth => const BreakpointValue<double>.all(
-    xs: 576, // Always maxWitdh == width
+    xs: 576,
     sm: 540,
     md: 720,
     lg: 960,

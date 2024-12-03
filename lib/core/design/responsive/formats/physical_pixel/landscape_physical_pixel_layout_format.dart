@@ -23,11 +23,11 @@ class LandscapePhysicalPixelLayoutFormat extends LayoutFormat {
 
   @override
   Map<LayoutBreakpoint, double> get breakpoints => <LayoutBreakpoint, double>{
-    LayoutBreakpoint.xs: 854, // FWVGA
-    LayoutBreakpoint.sm: 1180, // HD
-    LayoutBreakpoint.md: 1920, // FHD
-    LayoutBreakpoint.lg: 2260, //
-    LayoutBreakpoint.xl: 2960, // QHD
+    LayoutBreakpoint.xs: 854, 
+    LayoutBreakpoint.sm: 1180,
+    LayoutBreakpoint.md: 1920,
+    LayoutBreakpoint.lg: 2260,
+    LayoutBreakpoint.xl: 2960,
   };
 
   @override
