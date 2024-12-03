@@ -12,7 +12,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-      providers: providers,
+      providers: ProviderLit().listProvider,
       child: Layout(
         format: context.responsiveValue<LayoutFormat>(
           mobile: PortraitPhysicalPixelLayoutFormat(),

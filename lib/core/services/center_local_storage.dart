@@ -20,7 +20,7 @@ class CenterLocalStorage implements ILocalStorage {
             return deletedEntries > 50;
           },
         );
-        return LocalStorageResponse<void>(
+        return const LocalStorageResponse<void>(
           isSuccess: true,
         );
       }
@@ -37,7 +37,7 @@ class CenterLocalStorage implements ILocalStorage {
     try {
       if (_hive.isBoxOpen(boxName)) {
         await Hive.box<T>(boxName).close();
-        return LocalStorageResponse<void>(
+        return const LocalStorageResponse<void>(
           isSuccess: true,
         );
       } else {
@@ -110,12 +110,12 @@ class CenterLocalStorage implements ILocalStorage {
         if (existingObject != null && existingObject != value) {
           await box.put(id, value);
         }
-        return LocalStorageResponse<void>(
+        return const LocalStorageResponse<void>(
           isSuccess: true,
         );
       } else {
         await box.put(id, value);
-        return LocalStorageResponse<void>(
+        return const LocalStorageResponse<void>(
           isSuccess: true,
         );
       }
@@ -156,7 +156,7 @@ class CenterLocalStorage implements ILocalStorage {
   Future<LocalStorageResponse<void>> deleteById<T>({required String boxName, required String id}) async {
     try {
       await _hive.box<T>(boxName).delete(id);
-      return LocalStorageResponse<void>(
+      return const LocalStorageResponse<void>(
         isSuccess: true,
       );
     } catch (e) {
@@ -171,7 +171,7 @@ class CenterLocalStorage implements ILocalStorage {
   Future<LocalStorageResponse<void>> deleteBoxElement<T>({required String boxName}) async {
     try {
       await _hive.box<T>(boxName).clear();
-      return LocalStorageResponse<void>(
+      return const LocalStorageResponse<void>(
         isSuccess: true,
       );
     } catch (e) {

@@ -1,5 +1,7 @@
 class DataMissingException implements Exception {
-  DataMissingException(this.message);
+  
+  const DataMissingException(this.message);
+  
   final String message;
 
   @override

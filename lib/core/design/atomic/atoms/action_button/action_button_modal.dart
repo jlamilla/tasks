@@ -5,7 +5,7 @@ import 'package:task/core/design/atomic/tokens/gen/assets.gen.dart';
 class FloatingActionButtonModalCustom extends StatelessWidget {
   const FloatingActionButtonModalCustom({super.key, this.onPressed});
 
-  final void Function()? onPressed;
+  final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {

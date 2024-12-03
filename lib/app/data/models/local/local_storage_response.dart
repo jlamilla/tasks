@@ -1,13 +1,13 @@
 class LocalStorageResponse<T> {
-  LocalStorageResponse({
+  const LocalStorageResponse({
     required this.isSuccess,
     this.message = '',
     this.keys,
     this.result,
   });
 
-  bool isSuccess;
-  String message;
-  List<String>? keys;
-  T? result;
+  final bool isSuccess;
+  final String message;
+  final List<String>? keys;
+  final T? result;
 }

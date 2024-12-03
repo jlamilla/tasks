@@ -19,7 +19,7 @@ class AnimatedCheckbox extends StatefulWidget {
   final String subTitle;
   final bool initialValue;
   final ValueChanged<bool> onChanged;
-  final void Function() onDeleted;
+  final VoidCallback onDeleted;
 
   @override
   _AnimatedCheckboxState createState() => _AnimatedCheckboxState();
